@@ -27,7 +27,7 @@ main {
     border-radius: 50px;
     overflow: hidden;
     display: flex;
-    border: 2px solid black;
+    border: 2px solid var(--light-brown);
 }
 
 .column {
@@ -81,6 +81,10 @@ main {
     margin-bottom: 18px;
 }
 
+.block-header-name {
+    font-size: 38px;
+}
+
 .block-subheader {
     font-weight: 400;
     font-style: italic;
@@ -88,10 +92,25 @@ main {
     margin-bottom: 3px;
 }
 
-.block-title {
+#block-subheader-position {
+    font-size: 24px;
+    color: var(--light-brown);
+}
+
+.block-title-brouwn {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 6px;
+    color: var(--light-brown) !important;
+}
+
+
+.block-title {
+
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+
 }
 
 .block-description li {
@@ -99,14 +118,14 @@ main {
 }
 
 #profile-photo {
-    width: 100%;
+    width: 210px;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 15px double var(--pure-white);
+    border: 10px double var(--pure-white);
     object-fit: cover;
     object-position: top;
     display: inline-block;
-    border: 1px solid black;
+   
 }
 
 .relative-container {
@@ -136,6 +155,27 @@ main {
     visibility: visible;
 }
 
+#profile-section {
+    display: flex;
+   
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-data {
+    margin-left: 15px;
+}
+
+.mobile-only {
+    display: none ;
+
+}
+
+.desktop-only {
+    display: unset;
+
+}
+
 @media screen and (max-width: 1200px) {
     .container {
         border-radius: unset;
@@ -160,15 +200,22 @@ main {
 
     .column.left {
         max-width: unset;
-        background: unset;
         background-color: var(--light-brown);
     }
 
     #profile-photo {
-        width: 200px;
+        width: 160px;
     }
 
     .mobile-only {
         display: unset;
+    
     }
+    
+    .desktop-only {
+        display: none;
+    
+    }
+
+  
 }
