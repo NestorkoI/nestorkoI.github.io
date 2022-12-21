@@ -4,144 +4,171 @@
     box-sizing: border-box;
 }
 
+:root {
+    --light-brown: rgb(136, 78, 87);
+    --pure-white: rgb(254, 254, 254);
+}
+
+
+html, 
 body {
+    height: 100vh;
+}
+
+main {
     max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
 }
 
 .container {
-    display: flex;
-    border: 2px solid rgb(136, 78, 87);
+    width: 100%;
     border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    border: 2px solid black;
 }
 
-.aboutMe {
-    width: 40%;
-    max-width: 500px;
-    padding-bottom: 60px;
-    border-radius: 50px 0 0 50px;
-    background: linear-gradient(to bottom, rgb(136, 78, 87) 60%, white);
+.column {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.column.left {
+    flex: 1;
+    max-width: 320px;
+    background-color: var(--light-brown);
+}
+
+.column.right {
+    flex: 1;
+    background-color: var(--pure-white);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.contact-item > * {
+    text-decoration-line: none;
+    color: var(--pure-white);
+}
+
+.contact-item + .contact-item {
+    margin-top: 8px;
     color: white;
 }
 
-.aboutMyExperience {
-    width: 60%;
-    max-width: 700px;
+.contact-item > span:last-of-type,
+.contact-item > a:last-of-type {
+    margin-left: 10px;
 }
 
-.containerBox {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.containerBoxExp {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.stylrName {
-    padding-top: 120px;
-    margin-bottom: 110px;
-}
-
-img {
-    width: 300px;
-    height: 300px;
-    margin-top: 70px;
-    border-radius: 50%;
-    border: 15px double white;
-}
-
-.styleSvg {
-    margin-left: 5px;
+.block-section {
+    margin-bottom: 30px;
+    color: var(--pure-white);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
 }
 
-.degree {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+.block-section.dark-theme * {
+    color: black;
 }
 
-.header {
-    margin-top: 70px;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+.block-header {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 24px;
+    margin-bottom: 18px;
 }
 
-.partEducation {
-    margin-bottom: 20px;
-}
-
-.nameUniversity {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 28px;
-}
-
-.nameProfession {
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: 2px;
-    font-size: 28px;
-    color: rgb(136, 78, 87);
-}
-
-.workingPlace {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 22px;
-}
-
-.achievement {
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-bottom: 2px;
-    font-size: 20px;
-}
-
-
-
-.periodStudy {
-    font-family: 'Montserrat', sans-serif;
+.block-subheader {
     font-weight: 400;
     font-style: italic;
-    margin-left: 15px;
-    font-size: 20px;
+    font-size: 14px;
+    margin-bottom: 3px;
 }
 
-.nameTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.positionTitle {
-    font-family: 'Montserrat', sans-serif;
+.block-title {
     font-weight: 600;
-    font-size: 32px;
-    margin-left: 45px;
-    color: rgb(136, 78, 87);
+    font-size: 14px;
+    margin-bottom: 6px;
 }
 
-.navigate {
-    margin-top: 50px;
-    margin-bottom: 30px;
+.block-description li {
+    margin-left: 20px;
 }
 
-.change-my-color {
-    fill: white;
+#profile-photo {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 15px double var(--pure-white);
+    object-fit: cover;
+    object-position: top;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.relative-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+#wave-hand {
+    position: absolute;
+    background-color: #bc3ead21;
+    font-weight: bold;
+    top: -10px;
+    font-size: 30px;
+    right: 20%;
+    transition: right 1.2s ease-out;
+    visibility: hidden;
+    color: rgb(255 247 0);
+    font: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    box-shadow: 0px 0px 52px -11px #BC3EAD;
+}
+
+.relative-container:hover #wave-hand {
+    top: -10px;
+    right: -6%;
+    visibility: visible;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        border-radius: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html, 
+    body {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        border-radius: unset;
+    }
+
+    .column {
+        padding: 15px;
+        overflow-y: unset;
+    }
+
+    .column.left {
+        max-width: unset;
+        background: unset;
+        background-color: var(--light-brown);
+    }
+
+    #profile-photo {
+        width: 200px;
+    }
+
+    .mobile-only {
+        display: unset;
+    }
 }
