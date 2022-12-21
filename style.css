@@ -4,48 +4,36 @@
     box-sizing: border-box;
 }
 
-header {
+body {
     width: 100%;
-    background-color: aquamarine;
-}
-
-.containerHeader {
-    margin: 10px 0 0 50px ;
-}
-
-.containerBody {
-    width: 100%;
-    height: 100vh;
     display: flex;
-    justify-content: space-around;
 }
 
-.boxContact {
+.personalContact {
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(241, 232, 241);
+    
+}
+
+.infoAboutExperience {
     width: 60%;
-    /* margin: 0 auto; */
-    background-color: brown;
-}
-
-.boxExperience {
-    width: 80%;
-    background-color: greenyellow;
+    height: 100vh;
+    background-color: beige;
 }
 
 img {
-    width: 110px;
-    height: 110px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    border: 3px solid whitesmoke;
-    display: flex;
-    align-items: center;
-  
+    border: 8px solid whitesmoke;
 }
 
-.personalPhone, .personalEmail, .personalLocation {
+.userPhone, .userEmail, .userLocation {
     display: flex;
     
 }
 
-svg {
-    margin-right: 10px ;
+.styleSvg {
+    margin-left: 15px;
 }
