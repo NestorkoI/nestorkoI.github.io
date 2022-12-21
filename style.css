@@ -4,36 +4,65 @@
     box-sizing: border-box;
 }
 
-body {
+.container {
     width: 100%;
+    margin: 0 auto;
     display: flex;
 }
 
-.personalContact {
-    width: 40%;
-    height: 100vh;
-    background-color: rgb(241, 232, 241);
-    
+.aboutMe {
+    width: 100%;
+    max-width: 500px;
+    /* display: block;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    background-color: blanchedalmond; */
 }
 
-.infoAboutExperience {
-    width: 60%;
-    height: 100vh;
-    background-color: beige;
+.containerBox{
+    width: 70%;
+    margin: 0 auto;
+    /* display: block;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    background-color: blanchedalmond; */
+
+
 }
 
-img {
+.contactInfo {
+    /* display: block;
+    flex-direction: column;
+    text-align:start */
+}
+
+ img {
     width: 180px;
     height: 180px;
+    margin-top: 40px;
     border-radius: 50%;
-    border: 8px solid whitesmoke;
-}
-
-.userPhone, .userEmail, .userLocation {
-    display: flex;
+    border: 4px solid white;
+    
     
 }
+
+.aboutMyExperience {
+    width: 60%;
+    background-color: burlywood;
+}
+
+
+
+
 
 .styleSvg {
     margin-left: 15px;
 }
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
