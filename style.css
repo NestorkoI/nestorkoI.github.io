@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.containerHeader {
+    margin: 10px 0 0 50px ;
+}
+
+.containerBody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxContact {
+    width: 60%;
+    /* margin: 0 auto; */
+    background-color: brown;
+}
+
+.boxExperience {
+    width: 80%;
+    background-color: greenyellow;
+}
+
+img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    display: flex;
+    align-items: center;
+  
+}
+
+.personalPhone, .personalEmail, .personalLocation {
+    display: flex;
+    
+}
+
+svg {
+    margin-right: 10px ;
+}
