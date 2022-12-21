@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
+body {
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.container {
     display: flex;
+    
 }
 
 .aboutMe {
@@ -23,8 +27,6 @@
     background-color: burlywood;
 }
 
-
-
 .containerBox{
     width: 60%;
     margin: 0 auto;  
@@ -32,13 +34,11 @@
 
 .containerBoxExp {
     width: 70%;
-    margin: 0 auto;
-   
-  
+    margin: 0 auto; 
 }
 
 .stylrName {
-   padding-top: 90px;
+   padding-top: 120px;
    margin-bottom: 110px;
 }
 
@@ -49,8 +49,6 @@
     border-radius: 50%;
     border: 8px solid white;       
 }
-
-
 
 .styleSvg {
     margin-left: 15px;
@@ -85,6 +83,38 @@
     font-size: 22px;
 }
 
+.nameProfession {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 28px;
+
+}
+
+.workingPlace {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 22px;
+
+}
+
+.achievement {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    /* margin-left: 10px; */
+
+}
+
+
+
 .periodStudy {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -96,10 +126,8 @@
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    /* font-style: italic; */
     font-size: 48px;
     margin-bottom: 20px;
-
 }
 
 .positionTitle {
@@ -108,3 +136,10 @@
     font-size: 32px;
     margin-left: 45px;
 }
+
+.navigate {
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
