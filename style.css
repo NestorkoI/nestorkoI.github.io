@@ -11,64 +11,66 @@
 }
 
 .aboutMe {
-    width: 100%;
+    width: 40%;
     max-width: 500px;
     padding-bottom: 60px;
-    background-color: coral;
-  
-}
-
-.containerBox{
-    width: 60%;
-    margin: 0 auto;
-   
-}
-
- img {
-    width: 200px;
-    height: 200px;
-    margin-top: 60px;
-    border-radius: 50%;
-    border: 8px solid white; 
-       
+    background-color: coral; 
 }
 
 .aboutMyExperience {
     width: 60%;
+    max-width: 700px;
     background-color: burlywood;
 }
+
+
+
+.containerBox{
+    width: 60%;
+    margin: 0 auto;  
+}
+
+.containerBoxExp {
+    width: 70%;
+    margin: 0 auto;
+   
+  
+}
+
+.stylrName {
+   padding-top: 90px;
+   margin-bottom: 110px;
+}
+
+ img {
+    width: 300px;
+    height: 300px;
+    margin-top: 70px;
+    border-radius: 50%;
+    border: 8px solid white;       
+}
+
+
 
 .styleSvg {
     margin-left: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    
+    font-size: 18px;   
 }
 
 .degree {
-
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
-
 }
 
 .header {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 20px;
-    /* font-family: 'Bitter', serif; */
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
     font-weight: 700;
     font-size: 32px;
-
-}
-
-.none {
-   /* margin-left: 55px;  */
-  text-align: left;
-    
 }
 
 .partEducation {
@@ -87,4 +89,22 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-style: italic;
+    margin-left: 10px;
+}
+
+.nameTitle {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* font-style: italic; */
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+.positionTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin-left: 45px;
 }
