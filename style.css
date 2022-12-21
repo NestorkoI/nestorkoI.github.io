@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,56 +11,58 @@ body {
 
 .container {
     display: flex;
-    
+    border: 2px solid rgb(136, 78, 87);
+    border-radius: 50px;
 }
 
 .aboutMe {
     width: 40%;
     max-width: 500px;
     padding-bottom: 60px;
-    background-color: coral; 
+    border-radius: 50px 0 0 50px;
+    background: linear-gradient(to bottom, rgb(136, 78, 87) 60%, white);
+    color: white;
 }
 
 .aboutMyExperience {
     width: 60%;
     max-width: 700px;
-    background-color: burlywood;
 }
 
-.containerBox{
-    width: 60%;
-    margin: 0 auto;  
+.containerBox {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .containerBoxExp {
     width: 70%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .stylrName {
-   padding-top: 120px;
-   margin-bottom: 110px;
+    padding-top: 120px;
+    margin-bottom: 110px;
 }
 
- img {
+img {
     width: 300px;
     height: 300px;
     margin-top: 70px;
     border-radius: 50%;
-    border: 8px solid white;       
+    border: 15px double white;
 }
 
 .styleSvg {
-    margin-left: 15px;
+    margin-left: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 18px;   
+    font-size: 24px;
 }
 
 .degree {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .header {
@@ -68,19 +70,19 @@ body {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .partEducation {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .nameUniversity {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-top: 5px;
-    margin-bottom: 2px;
-    font-size: 22px;
+    margin-bottom: 10px;
+    font-size: 28px;
 }
 
 .nameProfession {
@@ -90,7 +92,7 @@ body {
     margin-top: 5px;
     margin-bottom: 2px;
     font-size: 28px;
-
+    color: rgb(136, 78, 87);
 }
 
 .workingPlace {
@@ -99,7 +101,6 @@ body {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 22px;
-
 }
 
 .achievement {
@@ -109,8 +110,6 @@ body {
     margin-top: 5px;
     margin-bottom: 2px;
     font-size: 20px;
-    /* margin-left: 10px; */
-
 }
 
 
@@ -119,11 +118,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-style: italic;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 20px;
 }
 
 .nameTitle {
-
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -132,14 +131,17 @@ body {
 
 .positionTitle {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 32px;
     margin-left: 45px;
+    color: rgb(136, 78, 87);
 }
 
 .navigate {
-
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
+.change-my-color {
+    fill: white;
+}
